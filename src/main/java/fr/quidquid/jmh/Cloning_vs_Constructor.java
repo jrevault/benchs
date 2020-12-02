@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+@Warmup(iterations = 5)
+@Measurement(iterations = 5)
+@OutputTimeUnit(TimeUnit.SECONDS)
 public class Cloning_vs_Constructor {
 
   @State( Scope.Thread )
