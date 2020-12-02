@@ -1,0 +1,14 @@
+mvn archetype:generate
+          -DinteractiveMode=false
+          -DarchetypeGroupId=org.openjdk.jmh
+          -DarchetypeArtifactId=jmh-java-benchmark-archetype
+          -DgroupId=com.jenkov
+          -DartifactId=first-benchmark
+          -Dversion=1.0
+
+java -jar target/benchmark.jar
+java -jar target/benchmark.jar .Cloning*
+
+
+http://tutorials.jenkov.com/java-performance/jmh.html
+
